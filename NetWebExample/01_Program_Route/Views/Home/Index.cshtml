@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+    <h1>Routing (Yönlendirme)</h1>
+    <p>Adres çubuğundaki yol,Program.cs teki rota şablonlarıyla eşletirilir ve ilgili controller/action çalışır.</p>
+    <ul>
+        <li><a href="/"></a>Home/Index</li>
+        <li><a href="/Home/About">Default rota ile</a></li>
+        <li><a href="/Hakkimizda">/Hakkimizda</a></li>
+        <li><a href="/blog/details/5">blog details</a></li>
+        <li><a href="/blog/details/abc">int kısıtlaması var bu 0 döner</a></li>
+        <li><a href="/blog/details/7">blog</a></li>
+        <li><a href="/iletisim">/iletisim</a></li>
+        <li><a href="/contact/index">contact</a></li>
+        <li><a href="/contact">contact</a></li>
+    </ul>
+</body>
+</html>

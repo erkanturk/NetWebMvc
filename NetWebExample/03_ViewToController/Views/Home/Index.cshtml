@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var kisiler = new List<SelectListItem>
+    {
+        new("Erkan","Erkan"),//text kullanıcıya görünen value ise sunucuya gönderilen değer
+        new("Ahmet","Efe")
+    };
+}
+
+<h2>Formdan Contoller'a veri gönderme</h2>
+@if(ViewBag.Mesaj!=null)
+{
+    <div class="alert alert-success">@ViewBag.Mesaj</div>
+}
+<h4>1) Form yapısı ile gönderme</h4>
+<form asp-controller="Home" asp-action="Index" method="Post">
+    <input type="text" name="ad" placeholder="ad" class="form-control mb-2" />
+    <select name="kisiler" class="form-select mb-2" asp-items="kisiler"></select>
+    <label class="mb-2"><input type="checkbox" name="onay" value="true" />Onaylıyorum</label>
+    <br />
+    <button type="submit" class="btn btn-primary">Gönder</button>
+</form>
+
+<h4>2) Html Helper ile eski yöntem</h4>
+@using(Html.BeginForm("Index","Home",FormMethod.Post))
+{
+    @Html.TextBox("ad",null ,new{@class="form-control",placeholder="ad"})
+    @Html.DropDownList("kisiler",kisiler,new{@class="form-select mb-2"})
+    <label class="mb-2">@Html.CheckBox("onay") Onaylıyorum</label>
+     <br />
+     <button type="submit" class="btn btn-secondary">Gönder</button>
+}

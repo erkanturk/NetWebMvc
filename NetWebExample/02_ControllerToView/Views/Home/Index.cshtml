@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<h2>@ViewBag.Baslik</h2>
+@foreach(var product in (List<string>)ViewData["Products"]!)
+@*Razor page cs dili ile html yapısını kullanmamızı sağlar ! null olmayacak demek*@
+{
+    
+        
+    
+    <ul>
+        <li><a asp-action="Details" asp-controller="Home" asp-route-id="1" >@product</a></li>
+    </ul>
+    
+}
+<a asp-action="Details" asp-controller="Home" asp-route-id="3">3 numaralı ürün detayı</a>
