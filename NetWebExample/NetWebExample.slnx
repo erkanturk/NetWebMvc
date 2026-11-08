@@ -11,4 +11,6 @@
   <Project Path="10_AutoMapper/10_AutoMapper.csproj" Id="919c43ad-5b90-4276-95ce-c3650e277161" />
   <Project Path="11_FluentValidation/11_FluentValidation.csproj" Id="0eed5285-34e0-45b6-91c0-bceefbd80fd3" />
   <Project Path="12_Dependency_Injection/12_Dependency_Injection.csproj" Id="7a6712b5-b690-4764-82d7-31fb1e6d0224" />
+  <Project Path="13_StateManagement/13_StateManagement.csproj" Id="fb8c4633-b107-4696-9242-c4acfa5ab72b" />
+  <Project Path="14_Middlewares/14_Middlewares.csproj" Id="5b8e11da-6252-4118-b4c6-248301b0361e" />
 </Solution>

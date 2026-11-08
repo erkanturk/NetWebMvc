@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Bu sayfa her açıldığında session ve cookieye yazar</p>
+</div>
+
+<table class="table w-75 mx-auto">
+    <tr><th>Session["UserName"]</th><td>@ViewBag.SessionUserName</td></tr>
+    <tr><th>Session["Ziyaretçi"]</th><td>@(ViewBag.ZiyaretSayisi ?? "boş") (Her yenilemede artar)</td></tr>
+    <tr><th>Cookie["UserName"]</th><td>@(ViewBag.CookieUserName??"Henüz yok (ilk istek tarayıcı çerezini geri getirmedi)")</td></tr>
+</table>
+<div class="text-center">
+    <a asp-action="Privacy" class="btn btn-primary">Privacy ye git</a>
+    <a asp-action="Temizle" class="btn btn-warning">Session ve Cookie yi temizle</a>
+</div>
+<p class="text-center mt-3">
+    Tarayıcıda f12 application sekmesinde çerezleri inceleyin session için sadece 
+    .AspnetCore.Session kimliği vardır içerik sunucudadır.
+</p>
