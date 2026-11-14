@@ -13,4 +13,6 @@
   <Project Path="12_Dependency_Injection/12_Dependency_Injection.csproj" Id="7a6712b5-b690-4764-82d7-31fb1e6d0224" />
   <Project Path="13_StateManagement/13_StateManagement.csproj" Id="fb8c4633-b107-4696-9242-c4acfa5ab72b" />
   <Project Path="14_Middlewares/14_Middlewares.csproj" Id="5b8e11da-6252-4118-b4c6-248301b0361e" />
+  <Project Path="15_Filter_Operation/15_Filter_Operation.csproj" Id="87a17ff8-0fa7-4b47-b2ed-c2712fbf852a" />
+  <Project Path="16_Web_Api/16_Web_Api.csproj" Id="89f84b45-93dc-4a00-bf3f-612aa00ba11d" />
 </Solution>
