@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Ado.Net</h1>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <h5>Sabit veri ekle</h5>
+        <form method="post" asp-action="AddData">
+            <button type="submit" class="btn btn-secondary">Erkan Türk Ekle</button>
+        </form>
+        <hr/>
+        <h5>Parametre ile ekle</h5>
+        <form method="post" asp-action="AddDataSecure">
+            <input type="text" name="FirstName" placeholder="Ad" class="form-control mb-2" required />
+            <input type="text" name="LastName" placeholder="Soyad" class="form-control mb-2" required />
+            <input type="number" name="Age" placeholder="Yaş" class="form-control mb-2" required min="1" max="120" />
+            <button type="submit" class="btn btn-primary">Ekle</button>
+        </form>
+    </div>
+    <div class="col-md-6">
+        <h5>Güncelle</h5>
+        <form method="post" asp-action="UpdateDataSecure">
+            <input type="number" name="Id" placeholder="Öğrenci No" class="form-control mb-2" required />
+            <input type="text" name="FirstName" placeholder="Ad" class="form-control mb-2" required />
+            <input type="text" name="LastName" placeholder="Soyad" class="form-control mb-2" required />
+            <input type="number" name="Age" placeholder="Yaş" class="form-control mb-2" required min="1" max="120" />
+            <button type="submit" class="btn btn-warning">Güncelle</button>
+        </form>
+        <hr/>
+        <h5>Sil</h5>
+        <form method="post" asp-action="DeleteDataSecure">
+            <input type="number" name="Id" placeholder="Öğrenci No" class="form-control mb-2" required/>
+            <button type="submit" class="btn btn-danger">Sil</button>
+        </form>
+    </div>
+</div>
