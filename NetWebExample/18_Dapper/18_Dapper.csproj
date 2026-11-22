@@ -12,8 +12,4 @@
     <PackageReference Include="Microsoft.Data.SqlClient" Version="7.1.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Product\" />
-  </ItemGroup>
-
 </Project>
